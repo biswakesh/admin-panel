@@ -10,67 +10,67 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import { useNavigate } from 'react-router-dom';
 const Sidebar = () => {
-  const navigate=useNavigate();
-  const handleDashboard=()=>{
+  const navigate = useNavigate();
+  const handleDashboard = () => {
     navigate("/")
   }
-  const handleCategory=()=>{
+  const handleCategory = () => {
     navigate("/category")
   }
-  const handleBooks=()=>{
+  const handleBooks = () => {
     navigate("/books")
   }
-  const handleComment=()=>{
+  const handleComment = () => {
     navigate("/comment")
   }
-  const handleUser=()=>{
+  const handleUser = () => {
     navigate("/user")
   }
-  const handleAuthor=()=>{
+  const handleAuthor = () => {
     navigate("/author")
   }
-  const handleSetting=()=>{
+  const handleSetting = () => {
     navigate("/setting")
   }
   return (
     <div className='sidebar-container'>
-    <div className='sidebar-header'>
+      <div className='sidebar-header'>
         <div className='logo'>
-        <img src={logo}/>
+          <img src={logo} />
         </div>
-        </div>
-        <ul>
+      </div>
+      <ul>
         <li onClick={handleDashboard}>
-          <span><DashboardIcon className='icons'/></span>
+          <span><DashboardIcon className='icons' /></span>
           <h3>Dashboard</h3>
         </li>
         <li onClick={handleCategory}>
-          <span><CategoryIcon className='icons'/></span>
+          <span><CategoryIcon className='icons' /></span>
           <h3>Category</h3>
         </li>
         <li onClick={handleBooks}>
-          <span><MenuBookIcon className='icons'/></span>
+          <span><MenuBookIcon className='icons' /></span>
           <h3>Books</h3>
         </li>
         <li onClick={handleComment}>
-          <span><CommentIcon className='icons'/></span>
+          <span><CommentIcon className='icons' /></span>
           <h3>Comment</h3>
         </li>
         <li onClick={handleUser}>
-          <span><Person4Icon className='icons'/></span>
+          <span><Person4Icon className='icons' /></span>
           <h3>Users</h3>
         </li>
         <li onClick={handleAuthor} >
-          <span><AccountBoxIcon className='icons'/></span>
+          <span><AccountBoxIcon className='icons' /></span>
           <h3>Author</h3>
         </li>
-        <li  onClick={handleSetting}>
-          <span><SettingsIcon className='icons'/></span>
+        <li onClick={handleSetting}>
+          <span><SettingsIcon className='icons' /></span>
           <h3>Settings</h3>
         </li>
-        </ul>
-        </div>
- 
+      </ul>
+    </div>
+
   )
 }
 

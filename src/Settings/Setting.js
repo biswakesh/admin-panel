@@ -3,8 +3,8 @@ import "./Setting.css"
 const Setting = () => {
   return (
     <div className='setting-container'>
-         <div className='setting-header'>
-      Settings
+      <div className='setting-header'>
+        Settings
       </div>
     </div>
   )
