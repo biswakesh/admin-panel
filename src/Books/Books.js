@@ -2,7 +2,6 @@ import React from 'react'
 import "./Books.css"
 import Table from 'react-bootstrap/Table';
 import { useState, useEffect } from 'react';
-import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 const Books = () => {
      const [book, setbook] = useState([]);
     useEffect(() => {
@@ -43,12 +42,12 @@ const Books = () => {
             {book.map((item, index)=>{
       return <tr key={index}>
         <td>{item.category_name}</td>
-        <td>{item.book_url}</td>
+        <td>{item.author_name}</td>
         <td>{item.book_title}</td>
-        <td> <img src={item.book_cover_img}/></td>
+        <td> <img src={`http://ebook.heyaskme.in/images/thumbs/${item.book_cover_img}`} alt='hello'/></td>
         <td>
-          <button style={{backgroundColor:"blue"}}>Edit</button>
-        <button>Delet</button>
+          <button style={{backgroundColor:"blue"}}>See Details</button>
+        <button>Read Book</button>
         </td>
           </tr>})}
             </Table>   
